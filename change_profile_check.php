@@ -29,7 +29,7 @@
       
       $user_id = $_SESSION['user_id'];
       
-      
+      /*
       //パスワードが一致するか確認
       $dsn = Database::dsn();
       $user = Database::db_user();
