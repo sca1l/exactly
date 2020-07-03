@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+body {
+	font-family: Meiryo,sans-serif;
+	font-size: 15px;
+	line-height: 1.7;
+	padding: 0;
+	background-color: #FFF;
+	color: #111;
+	width: 100%;
+	margin: 0 auto;
+	/*text-align: center;*/
+}
+
+section,article, aside, nav, header, main, footer { display: block; }
+
+h1,h2,h3,h4 {
+	font-weight: normal;
+	margin: 1em auto 1em;
+	display: inline-block;
+}
+
+h2 {
+	border-bottom: solid 1px #CCC;
+}
+
+a {
+	text-decoration: none;
+	color: #75D;
+}
+
+main {
+	width: 100%;
+	max-width: 680px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*-------*/
+
+
+header {
+	width: 100%;
+	padding: 0;
+	position: relative;
+	margin-bottom: 1em;
+}
+
+header h1 {
+	max-width: 680px;
+	margin: 0 auto;
+	display: block;
+}
+
+
+header .border {
+	border-bottom: solid 3px #888;
+	background-color: #EEE;
+}
+
+section {
+	padding: 0 0 5em;
+}
+
+footer {
+	border-top: solid 3px #CCC;
+	padding: 12px 0;
+	text-align: center;
+}
+
+.column {
+	display: flex;
+	width: 100%;
+	max-width: 680px;
+	margin: 0 auto;
+}
+
+.title {
+	text-align: left;
+}
+.menu {
+	flex: auto;
+	text-align: right;
+}
+.menu a {
+	margin: 20px;
+}
+
+
+
+textarea {
+	width: 80%;
+	max-width: 680px;
+	margin: 0 auto;
+}
+
+.question {
+	border-style: double;
+	padding: 10px;
+}
+
+.question_text {
+	display: block;
+	font-size: 24px;
+}
+
+.question_answer {
+	display: block;
+	font-size: 15px;
+	text-align: right;
+}
+
+.question_update {
+	display: block;
+	font-size: 15px;
+	text-align: right;
+}
+
+.error_message {
+	background-color: #f3dee2;
+	border-radius: 4px;
+	padding: 1px 10px;
+}
+
+.success_message {
+	background-color: #e4f8e9;
+	border-radius: 4px;
+	padding: 1px 10px;
+}
+
+.small {
+	font-size: 0.75em;
+}
+
+.red {
+	color: #f44;
+}
+.green {
+	color: #4f4;
+}
+
+input[type="submit"] {
+   /* input要素のうちtype属性値がbuttonのものに対して装飾 */
+   background-image: linear-gradient(0deg, #a7d9f5, #eaf6fd); 
+   border: 1px solid #3c7fb1;
+   border-radius: 0.3em;
+}
+input[type="submit"]:hover {
+   /* マウスが載ったとき */
+   background-image: linear-gradient(0deg, #68d3db, #e5f4fc);
+   border: 1px solid #2c628b;
+}
+input[type="submit"]:active {
+   /* クリックされたとき */
+   background-image: linear-gradient(180deg, #68d3db, #e5f4fc);
+   border: 1px solid skyblue;
+}
+
+input[type="submit"]:hover.ans_yes {
+   /* クリックされたとき */
+   background-image: linear-gradient(0deg, #e55, #e5f4fc);
+   border: 1px solid skyblue;
+}
+input[type="submit"]:active.ans_yes {
+   /* クリックされたとき */
+   background-image: linear-gradient(180deg, #f44, #e5f4fc);
+   border: 1px solid skyblue;
+}
+
+input[type="submit"]:hover.ans_no {
+   /* クリックされたとき */
+   background-image: linear-gradient(0deg, #55e, #e5f4fc);
+   border: 1px solid skyblue;
+}
+input[type="submit"]:active.ans_no {
+   /* クリックされたとき */
+   background-image: linear-gradient(180deg, #44f, #e5f4fc);
+   border: 1px solid skyblue;
+}
+
+.button_menu {
+	margin: 10px 0px 5px;
+}
+.button_left {
+	text-align: left;
+	float: left;
+}
+.button_right {
+	text-align: right;
+}
+
+
+.ansform_unanswered .ans_reset {
+	display: none;
+}
+
+.ansform_answered {
+	/*ここはなんもなし*/
+}
+
+.ansform_deferred .ans_defer{
+	display: none;
+}
