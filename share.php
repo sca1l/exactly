@@ -4,7 +4,7 @@
   session_start();
   
   //DB用
-  require 'Database.php';
+  require(dirname(__FILE__).'/phpclass/Database.php');
   
   $exist = false;
   
