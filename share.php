@@ -33,7 +33,7 @@
       
       $rec = $stmt->fetch(PDO::FETCH_ASSOC);
       $exist = !!$rec;
-    }(Exception $e){
+    } catch(Exception $e) {
       print Database::db_errormessage($e);
       exit();
     }
