@@ -89,7 +89,8 @@
             //回答した本人かどうかで表示変更
             if( isset($_SESSION['user_id']) && $_SESSION['user_id'] == $user_id){ 
           ?>
-            <h3><a href="./index.php">内容をツイートする！</a></h3>
+            <h3>内容をツイートする！</h3><br>
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="「<?php if($exist){ print $rec['question'];} ?>」に回答しました！ #EXACTLY箱 #YesかNoのみで答える質問サービス" data-url="http://exactly.sca1l.net/share.php?user_id=<?php print $_SESSION['user_id'];?>&qid=<?php print $qid; ?>" data-lang="ja">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
             <br>
             
             <h3><a href="./mypage.php">マイページに戻る</a></h3>
