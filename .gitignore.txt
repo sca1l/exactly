@@ -1,4 +1,0 @@
-
-#/phpclassフォルダはダミーを置きたいので無視
-phpclass/
-
