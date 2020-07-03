@@ -49,7 +49,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>質問に回答しました！ - EXACTLY箱</title>
+    <title>「<?php if($exist){ print $rec['question'];} ?>」に回答しました！ - EXACTLY箱</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"> 
   </head>
