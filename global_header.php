@@ -3,7 +3,7 @@
       <div class="border">
         <nav class="column">
           <div class="title">
-            EXACTLY
+            EXACTLY箱
           </div>
           
           <div class="menu">
