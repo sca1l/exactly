@@ -87,7 +87,7 @@
         exit();
       }
     } catch(Exception $e) {
-      print print Database::db_errormessage($e);
+      print Database::db_errormessage($e);
       exit();
     }
   }
