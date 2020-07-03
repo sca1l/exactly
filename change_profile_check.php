@@ -29,27 +29,6 @@
       
       $user_id = $_SESSION['user_id'];
       
-      /*
-      //パスワードが一致するか確認
-      $dsn = Database::dsn();
-      $user = Database::db_user();
-      $password = Database::db_password();
-      
-      $dbh = new PDO($dsn,$user,$password);
-      $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-      $sql = 'SELECT code,user_id,password,user_name FROM user WHERE user_id = ?';
-      $stmt = $dbh->prepare($sql);
-      $data[] = $user_id;
-      $stmt->execute($data);
-      $rec = $stmt->fetch(PDO::FETCH_ASSOC);
-      
-      $dbh = null;
-      
-      if(!password_verify($user_password, $rec['password'])){
-        $_SESSION['error_message'] = 'エラー：パスワードが正しくありません。';
-        header('Location: ./change_profile.php');
-        exit();
-      }*/
       if (!CsrfValidator::validate(filter_input(INPUT_POST, 'token'))) {
         $_SESSION['error_message'] = 'エラー：値が不正です。';
         header('Location: ./change_profile.php');
@@ -63,8 +42,8 @@
       }else{
         
         $dsn = 'mysql:dbname=yes_no_exactly;host=localhost;charset=utf8';
-        $user = DB::db_user();
-        $password = DB::db_password();
+        $user = Database::db_user();
+        $password = Database::db_password();
         
         $dbh = new PDO($dsn,$user,$password);
         $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
