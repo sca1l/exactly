@@ -41,7 +41,7 @@
         
       }else{
         
-        $dsn = 'mysql:dbname=yes_no_exactly;host=localhost;charset=utf8';
+        $dsn = Database::dsn();
         $user = Database::db_user();
         $password = Database::db_password();
         
