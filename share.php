@@ -52,6 +52,14 @@
     <title>「<?php if($exist){ print $rec['question'];} ?>」に回答しました！ - EXACTLY箱</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"> 
+    <?php if($exist){ ?>
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@sca1l" /> 
+    <meta property="og:url" content="http://exactly.sca1l.net/share.php?user_id=<?php print $_SESSION['user_id'];?>&qid=<?php print $qid; ?>" /> 
+    <meta property="og:title" content="「<?php if($exist){ print $rec['question'];} ?>」に回答しました！ - EXACTLY箱" /> 
+    <meta property="og:description" content="YesかNoだけ、EXACTLY箱" /> 
+    <meta property="og:image" content="./img/answer<?php print $rec['answer']; ?>.png" />
+    <?php } ?>
   </head>
   
   <body>
