@@ -81,12 +81,12 @@
           <h2><?php print $_SESSION['user_name'] ; ?> さんのマイページ</h2><br>
           
           <br>
-          <a href="./user.php?user_id=<?php print $_SESSION['user_id']; ?>">http://exactly.sca1l.net/user.php?user_id=<?php print $_SESSION['user_id']; ?></a><br>
+          <a href="./user.php?user_id=<?php print $_SESSION['user_id']; ?>">https://exactly.sca1l.net/user.php?user_id=<?php print $_SESSION['user_id']; ?></a><br>
           
           あなたの質問ページです。<br>
           SNS等で共有して質問してもらいましょう。<br>
           
-          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="質問受付中です！ #EXACTLY箱 #YesかNoのみで答える質問サービス" data-url="http://exactly.sca1l.net/user.php?user_id=<?php print $_SESSION['user_id'];?>" data-lang="ja">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="質問受付中です！ #EXACTLY箱 #YesかNoのみで答える質問サービス" data-url="https://exactly.sca1l.net/user.php?user_id=<?php print $_SESSION['user_id'];?>" data-lang="ja">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
           
           <br>
           
