@@ -179,7 +179,7 @@
     
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@sca1l" /> 
-    <meta property="og:url" content="http://exactly.sca1l.net/user.php?user_id=<?php print $_SESSION['user_id'];?>" /> 
+    <meta property="og:url" content="https://exactly.sca1l.net/user.php?user_id=<?php print $_SESSION['user_id'];?>" /> 
     <meta property="og:title" content="<?php 
           if(isset($user_name)){
             print $user_name;
@@ -188,7 +188,7 @@
           }
         ?> さんに質問する - EXACTLY箱" /> 
     <meta property="og:description" content="YesかNoだけ、EXACTLY箱" /> 
-    <meta property="og:image" content="http://exactly.sca1l.net/img/twittercard.png" />
+    <meta property="og:image" content="https://exactly.sca1l.net/img/twittercard.png" />
     
   </head>
   
