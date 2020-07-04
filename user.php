@@ -176,6 +176,20 @@
         ?> さんに質問する - EXACTLY箱</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"> 
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@sca1l" /> 
+    <meta property="og:url" content="http://exactly.sca1l.net/user.php?user_id=<?php print $_SESSION['user_id'];?>" /> 
+    <meta property="og:title" content="<?php 
+          if(isset($user_name)){
+            print $user_name;
+          }else{
+            print "?";
+          }
+        ?> さんに質問する - EXACTLY箱" /> 
+    <meta property="og:description" content="YesかNoだけ、EXACTLY箱" /> 
+    <meta property="og:image" content="./img/twittercard.png" />
+    
   </head>
   
   <body>
