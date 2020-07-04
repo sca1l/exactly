@@ -188,7 +188,7 @@
           }
         ?> さんに質問する - EXACTLY箱" /> 
     <meta property="og:description" content="YesかNoだけ、EXACTLY箱" /> 
-    <meta property="og:image" content="./img/twittercard.png" />
+    <meta property="og:image" content="http://exactly.sca1l.net/img/twittercard.png" />
     
   </head>
   
