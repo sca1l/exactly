@@ -40,7 +40,8 @@
       
       if(!empty($question_data)){
         //配列のソート
-        for($i=0; $i<count($question_data); $i++){
+        $question_data_size = count($question_data);
+        for($i=0; $i<$question_data_size; $i++){
           if(!empty($question_data[$i])){
             $sort = array();//一応
             foreach ((array)$question_data[$i] as $key => $value) {
