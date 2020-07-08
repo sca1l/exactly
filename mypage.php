@@ -38,19 +38,20 @@
         $rec = $stmt->fetch(PDO::FETCH_ASSOC);
       }
       
-      //配列のソート
-      //ここ、高速化できるのでちゃんと書き直す
-      for($i=0; !empty($question_data)&&$i<count($question_data); $i++){
-        if(!empty($question_data[$i])){
-          $sort = array();//一応
-          foreach ((array)$question_data[$i] as $key => $value) {
-            $datetmp = date_create_from_format("Y-m-d H:i:s", $value['answer_date']);
-            $unixtime = (int)$datetmp->format('U');
-            //逆順にしたいので符号反転
-            $unixtime = -$unixtime;
-            $sort[$key] = $unixtime;
+      if(!empty($question_data)){
+        //配列のソート
+        for($i=0; $i<count($question_data); $i++){
+          if(!empty($question_data[$i])){
+            $sort = array();//一応
+            foreach ((array)$question_data[$i] as $key => $value) {
+              $datetmp = date_create_from_format("Y-m-d H:i:s", $value['answer_date']);
+              $unixtime = (int)$datetmp->format('U');
+              //逆順にしたいので符号反転
+              $unixtime = -$unixtime;
+              $sort[$key] = $unixtime;
+            }
+            array_multisort($sort, SORT_ASC, $question_data[$i]);
           }
-          array_multisort($sort, SORT_ASC, $question_data[$i]);
         }
       }
       
