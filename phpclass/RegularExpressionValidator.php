@@ -3,7 +3,7 @@ class RegularExpressionValidator {
     
     const PASSWORD_ERROR = '半角英数字をそれぞれ1種類以上含む8文字以上64文字以下のパスワードでお願いします。';
     
-    const USERID_ERROR = '半角英数字とアンダーバーからなる3文字以上15文字以下のユーザーIDでお願いします。';
+    const USERID_ERROR = '半角英数字とアンダーバーからなる2文字以上15文字以下のユーザーIDでお願いします。';
     
     public static function validatePassword($password){
         //正規表現：半角英数字をそれぞれ1種類以上含む8文字以上64文字以下のパスワード
