@@ -16,7 +16,7 @@ section,article, aside, nav, header, main, footer { display: block; }
 
 h1,h2,h3,h4 {
 	font-weight: normal;
-	margin: 1em auto 1em;
+	margin: 10px auto 10px;
 	display: inline-block;
 }
 
@@ -64,11 +64,12 @@ header .border {
 }
 
 section {
-	padding: 0 0 5em;
+	margin-top: 30px;
 }
 
 footer {
 	border-top: solid 3px #CCC;
+	margin-top: 40px;
 	padding: 12px 0;
 	text-align: center;
 }
@@ -205,4 +206,10 @@ input[type="submit"]:active.ans_no {
 
 .ansform_deferred .ans_defer{
 	display: none;
+}
+
+.background-gray {
+	padding: 10px;
+	margin: 10px;
+	background-color: #eee;
 }
