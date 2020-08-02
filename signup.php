@@ -46,7 +46,7 @@
           
           ユーザーID<br>
           <input type="text" name="user_id" style="width: 300px"><br>
-          <div class="small">半角英数字とアンダーバーからなる3文字以上15文字以下のユーザーIDでお願いします。</div><br>
+          <div class="small">半角英数字とアンダーバーからなる2文字以上15文字以下のユーザーIDでお願いします。</div><br>
           
           パスワード<br>
           <input id="password_textbox" type="password" name="password" style="width: 300px"><br>
