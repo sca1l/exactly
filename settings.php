@@ -34,11 +34,6 @@
         <a href="./change_password.php">パスワードの変更</a>
         </p>
         
-        <p>
-        <a href="./delete_account.php">アカウントの削除</a>
-        </p>
-        
-        
       </section>
     </main>
     
