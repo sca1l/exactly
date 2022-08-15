@@ -77,9 +77,10 @@
         
       }elseif( isset($_POST['delete']) ){
         //削除
-        $dsn = 'mysql:dbname=yes_no_exactly;host=localhost;charset=utf8';
-        $user = 'root';
-        $password ='';
+        $dsn = Database::dsn();
+        $user = Database::db_user();
+        $password = Database::db_password();
+        
         $dbh = new PDO($dsn,$user,$password);
         $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         

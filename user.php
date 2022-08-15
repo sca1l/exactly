@@ -7,6 +7,9 @@
   //DB用
   require(dirname(__FILE__).'/phpclass/Database.php');
   
+  //タイムゾーンの設定
+  date_default_timezone_set('Asia/Tokyo');
+  
   $dsn = Database::dsn();
   $user = Database::db_user();
   $password = Database::db_password();

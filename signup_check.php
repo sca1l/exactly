@@ -83,12 +83,14 @@
           
           $dbh = new PDO($dsn,$user,$password);
           $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-          $sql = 'INSERT INTO user(user_id, password, site_id, user_name, biography) VALUES (?,?,?,?,?)';
+          $sql = 'INSERT INTO user(user_id, password, site_id, oauth_token ,oauth_verifier, user_name, biography) VALUES (?,?,?,?,?,?,?)';
           $stmt = $dbh->prepare($sql);
           $data = array();
           $data[] = $user_id;
           $data[] = $hash_pass;
           $data[] = 0; //他サイトOAuthなし、0を指定
+          $data[] = "";
+          $data[] = "";
           $data[] = $user_name;
           $data[] = $biography;
           $stmt->execute($data);
